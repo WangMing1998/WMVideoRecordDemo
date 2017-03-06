@@ -1,0 +1,6 @@
+framework module WMRecordLibrary {
+  umbrella header "WMRecordLibrary.h"
+
+  export *
+  module * { export * }
+}

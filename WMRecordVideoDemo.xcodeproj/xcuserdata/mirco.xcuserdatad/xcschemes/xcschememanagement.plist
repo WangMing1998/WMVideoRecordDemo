@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>WMRecordVideoDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>EEC645E21E69050D0085CD6E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EEC645FB1E69050D0085CD6E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EEC646061E69050D0085CD6E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
