@@ -37,24 +37,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9MN-2i-1Ra">
-                                <rect key="frame" x="89" y="253" width="167" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Landscape record Video"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9MN-2i-1Ra">
+                                <rect key="frame" x="0.0" y="200" width="375" height="34"/>
+                                <state key="normal" title="横屏录制">
+                                    <color key="titleColor" red="1" green="0.1721970397" blue="0.17448955790000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="landscapeRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YQI-Tm-Ij8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCC-DC-0yh">
-                                <rect key="frame" x="101" y="449" width="143" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Portrait record Video"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCC-DC-0yh">
+                                <rect key="frame" x="0.0" y="400" width="375" height="34"/>
+                                <state key="normal" title="竖屏录制">
+                                    <color key="titleColor" red="1" green="0.1721970397" blue="0.17448955790000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="portraitRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GRE-Nx-oIz"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DCC-DC-0yh" firstAttribute="top" secondItem="9MN-2i-1Ra" secondAttribute="top" constant="200" id="JiL-gW-fan"/>
+                            <constraint firstItem="9MN-2i-1Ra" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="200" id="LHX-2Y-uxc"/>
+                            <constraint firstItem="DCC-DC-0yh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NHT-jZ-vfG"/>
+                            <constraint firstItem="9MN-2i-1Ra" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Nl3-uL-c4Y"/>
+                            <constraint firstAttribute="trailing" secondItem="9MN-2i-1Ra" secondAttribute="trailing" id="anq-Q4-xro"/>
+                            <constraint firstAttribute="trailing" secondItem="DCC-DC-0yh" secondAttribute="trailing" id="sq7-8b-c9W"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GPq-5n-vGQ"/>
                 </viewController>

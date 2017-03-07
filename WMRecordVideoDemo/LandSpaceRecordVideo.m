@@ -12,6 +12,19 @@
 @interface LandSpaceRecordVideo ()
 @property(nonatomic,strong) WMRecorder *recordVideoManager;
 @property(nonatomic,strong) WMRecordConfiguration *recordVideoConfiguration;
+@property (weak, nonatomic) IBOutlet UIButton *buttonSD;
+
+@property (weak, nonatomic) IBOutlet UIButton *buttonSetting;
+@property (weak, nonatomic) IBOutlet UIButton *buttonMD;
+@property (weak, nonatomic) IBOutlet UIButton *buttonHD;
+@property (weak, nonatomic) IBOutlet UIButton *buttonSwitchCamera;
+@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
+@property (weak, nonatomic) IBOutlet UIButton *buttonRecord;
+
+@property (weak, nonatomic) IBOutlet UIButton *buttonAudioMute;
+
+@property (weak, nonatomic) IBOutlet UISlider *zoomValueSlider;
+
 @end
 
 @implementation LandSpaceRecordVideo
@@ -19,7 +32,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor yellowColor];
+    
+    self.navigationController.navigationBar.hidden = YES;
+    
+    [self.zoomValueSlider setThumbImage:[UIImage imageNamed:@"picker_slider_thumb.png"] forState:UIControlStateNormal];
+    
+    
     [self viewOrientation:self.view withOritentation:UIInterfaceOrientationLandscapeRight];
     
     self.recordVideoConfiguration = [[WMRecordConfiguration alloc] init];
@@ -32,7 +50,6 @@
     self.recordVideoConfiguration.audioBitRate = 64000;
     self.recordVideoConfiguration.recordOrientation = videoRecordOrientationLandscapeRight;
     self.recordVideoConfiguration.videoRecordMaxTime = 7200;
-    
     self.recordVideoManager = [[WMRecorder alloc] initWithRecordConfiguration:self.self.recordVideoConfiguration];
     
     self.recordVideoManager.previewLayer.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);

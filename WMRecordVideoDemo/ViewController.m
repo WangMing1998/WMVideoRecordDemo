@@ -8,11 +8,11 @@
 
 #import "ViewController.h"
 #import <WMRecordLibrary/WMRecordLibrary.h>
-#import "BBFlashCtntLabel.h"
+
 @interface ViewController ()
 @property(nonatomic,strong) WMRecorder *recordVideoManager;
 @property(nonatomic,strong) WMRecordConfiguration *recordVideoConfiguration;
-@property(nonatomic,strong) BBFlashCtntLabel *autoScrollLabel;
+
 @end
 
 @implementation ViewController

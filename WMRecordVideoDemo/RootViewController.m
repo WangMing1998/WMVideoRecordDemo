@@ -26,7 +26,8 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)landscapeRecord:(UIButton *)sender {
-    LandSpaceRecordVideo *lanSpaceVC = [[LandSpaceRecordVideo alloc] init];
+    LandSpaceRecordVideo *lanSpaceVC = [[UIStoryboard storyboardWithName:@"LandSpace" bundle:[NSBundle mainBundle]]
+                                        instantiateViewControllerWithIdentifier:@"LandSpaceRecordVideo"];;
     
     [self.navigationController pushViewController:lanSpaceVC animated:YES];
 }

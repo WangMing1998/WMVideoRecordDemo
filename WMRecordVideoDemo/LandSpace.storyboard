@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Land Space Record Video-->
+        <scene sceneID="cNk-TZ-kEk">
+            <objects>
+                <viewController storyboardIdentifier="LandSpaceRecordVideo" id="1zh-gt-F8d" customClass="LandSpaceRecordVideo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eoS-5y-UfM"/>
+                        <viewControllerLayoutGuide type="bottom" id="S52-2j-SS1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KRq-ZU-SVs">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rW8-Rp-MTz" userLabel="录制">
+                                <rect key="frame" x="603.5" y="166" width="43.5" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rW8-Rp-MTz" secondAttribute="height" multiplier="1:1" id="7Wn-pf-Olu"/>
+                                </constraints>
+                                <state key="normal" image="icon_control_n.png"/>
+                                <state key="selected" image="icon_control_s.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIV-Sk-PJN">
+                                <rect key="frame" x="20" y="331" width="37" height="34"/>
+                                <state key="normal" title="标清"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NsS-ZH-gk6">
+                                <rect key="frame" x="77" y="375" width="68" height="91"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jQ1-Hd-ua9">
+                                        <rect key="frame" x="0.0" y="30.5" width="68" height="30.5"/>
+                                        <state key="normal" title="高清"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uLv-38-ZTL">
+                                        <rect key="frame" x="0.0" y="61" width="68" height="30"/>
+                                        <state key="normal" title="超清"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAL-3B-vqI">
+                                        <rect key="frame" x="0.0" y="0.0" width="68" height="30.5"/>
+                                        <state key="normal" title="标清"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.079480627440000007" green="1" blue="0.1726366758" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="uLv-38-ZTL" firstAttribute="leading" secondItem="NsS-ZH-gk6" secondAttribute="leading" id="0TK-iE-e4h"/>
+                                    <constraint firstItem="EAL-3B-vqI" firstAttribute="top" secondItem="NsS-ZH-gk6" secondAttribute="top" id="FOm-A8-oyM"/>
+                                    <constraint firstAttribute="trailing" secondItem="EAL-3B-vqI" secondAttribute="trailing" id="OLg-ys-a0p"/>
+                                    <constraint firstItem="jQ1-Hd-ua9" firstAttribute="leading" secondItem="NsS-ZH-gk6" secondAttribute="leading" id="R4Q-9Y-1E4"/>
+                                    <constraint firstAttribute="bottom" secondItem="uLv-38-ZTL" secondAttribute="bottom" id="Z1m-eA-drJ"/>
+                                    <constraint firstItem="jQ1-Hd-ua9" firstAttribute="top" secondItem="EAL-3B-vqI" secondAttribute="bottom" id="bfc-pQ-SA1"/>
+                                    <constraint firstItem="jQ1-Hd-ua9" firstAttribute="top" secondItem="EAL-3B-vqI" secondAttribute="bottom" id="g9A-pY-eqa"/>
+                                    <constraint firstAttribute="trailing" secondItem="uLv-38-ZTL" secondAttribute="trailing" id="j7k-5M-erK"/>
+                                    <constraint firstItem="uLv-38-ZTL" firstAttribute="top" secondItem="jQ1-Hd-ua9" secondAttribute="bottom" id="jmQ-wp-lrd"/>
+                                    <constraint firstAttribute="width" secondItem="NsS-ZH-gk6" secondAttribute="height" multiplier="60:80" id="kyN-8V-Rnu"/>
+                                    <constraint firstItem="uLv-38-ZTL" firstAttribute="height" secondItem="EAL-3B-vqI" secondAttribute="height" id="pla-bs-zss"/>
+                                    <constraint firstItem="jQ1-Hd-ua9" firstAttribute="height" secondItem="EAL-3B-vqI" secondAttribute="height" id="q4C-M5-WFa"/>
+                                    <constraint firstItem="uLv-38-ZTL" firstAttribute="top" secondItem="jQ1-Hd-ua9" secondAttribute="bottom" id="sOr-em-IAT"/>
+                                    <constraint firstItem="EAL-3B-vqI" firstAttribute="leading" secondItem="NsS-ZH-gk6" secondAttribute="leading" id="sex-ga-ylU"/>
+                                    <constraint firstAttribute="trailing" secondItem="jQ1-Hd-ua9" secondAttribute="trailing" id="yqP-2W-PR1"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exP-Bz-n6N">
+                                <rect key="frame" x="24.5" y="18" width="37" height="34"/>
+                                <state key="normal" title="返回"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Akm-ZV-uIv">
+                                <rect key="frame" x="14" y="170" width="49" height="34"/>
+                                <state key="normal" image="flashLightOff.png"/>
+                                <state key="selected" image="flashLightOn.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yli-ZP-8PR">
+                                <rect key="frame" x="320" y="18" width="43.5" height="43"/>
+                                <state key="normal" image="switchCamera.png"/>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnh-N2-IyZ">
+                                <rect key="frame" x="587" y="29" width="71.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="6Js-Oi-JUH">
+                                <rect key="frame" x="183.5" y="333" width="317" height="31"/>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pd-CC-pm4">
+                                <rect key="frame" x="611.5" y="326.5" width="27.5" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6pd-CC-pm4" secondAttribute="height" multiplier="2.5:4" id="UYr-oV-smV"/>
+                                </constraints>
+                                <state key="normal" image="mic_on.png"/>
+                                <state key="selected" image="mic_off.png"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yli-ZP-8PR" firstAttribute="height" secondItem="rW8-Rp-MTz" secondAttribute="height" id="0EK-iW-ehv"/>
+                            <constraint firstItem="6Js-Oi-JUH" firstAttribute="centerX" secondItem="yli-ZP-8PR" secondAttribute="centerX" id="0Wq-U2-yNI"/>
+                            <constraint firstAttribute="bottom" secondItem="jIV-Sk-PJN" secondAttribute="bottom" constant="10" id="0wI-BG-gcE"/>
+                            <constraint firstItem="6Js-Oi-JUH" firstAttribute="centerY" secondItem="jIV-Sk-PJN" secondAttribute="centerY" id="5Dq-vL-pZv"/>
+                            <constraint firstItem="yli-ZP-8PR" firstAttribute="centerX" secondItem="KRq-ZU-SVs" secondAttribute="centerX" constant="8" id="5qF-cr-zhc"/>
+                            <constraint firstItem="rW8-Rp-MTz" firstAttribute="centerY" secondItem="KRq-ZU-SVs" secondAttribute="centerY" id="7TO-yG-llQ"/>
+                            <constraint firstItem="jIV-Sk-PJN" firstAttribute="leading" secondItem="KRq-ZU-SVs" secondAttribute="leading" constant="20" id="C13-hC-ATa"/>
+                            <constraint firstItem="qnh-N2-IyZ" firstAttribute="centerY" secondItem="exP-Bz-n6N" secondAttribute="centerY" constant="4.5" id="Dt1-7P-P25"/>
+                            <constraint firstItem="6pd-CC-pm4" firstAttribute="centerY" secondItem="jIV-Sk-PJN" secondAttribute="centerY" id="HF5-dI-BiU"/>
+                            <constraint firstItem="rW8-Rp-MTz" firstAttribute="width" secondItem="KRq-ZU-SVs" secondAttribute="width" multiplier="40:320" constant="-40" id="KYV-fz-Gq3"/>
+                            <constraint firstItem="qnh-N2-IyZ" firstAttribute="centerY" secondItem="yli-ZP-8PR" secondAttribute="centerY" id="L12-Fg-4s5"/>
+                            <constraint firstItem="jIV-Sk-PJN" firstAttribute="trailing" secondItem="NsS-ZH-gk6" secondAttribute="leading" constant="-20" id="Lby-aU-CNq"/>
+                            <constraint firstAttribute="trailing" secondItem="rW8-Rp-MTz" secondAttribute="trailing" constant="20" id="Ruu-Al-osf"/>
+                            <constraint firstItem="6pd-CC-pm4" firstAttribute="width" secondItem="rW8-Rp-MTz" secondAttribute="width" multiplier="2:5" constant="10" id="U8c-9c-NjL"/>
+                            <constraint firstItem="yli-ZP-8PR" firstAttribute="width" secondItem="rW8-Rp-MTz" secondAttribute="width" id="Vw3-Us-WfX"/>
+                            <constraint firstItem="NsS-ZH-gk6" firstAttribute="top" secondItem="KRq-ZU-SVs" secondAttribute="bottom" id="Xp9-A0-She"/>
+                            <constraint firstItem="NsS-ZH-gk6" firstAttribute="height" secondItem="KRq-ZU-SVs" secondAttribute="height" multiplier="80:330" id="fuO-ho-ZMc"/>
+                            <constraint firstItem="rW8-Rp-MTz" firstAttribute="centerX" secondItem="qnh-N2-IyZ" secondAttribute="centerX" constant="2.75" id="j0p-CZ-sR6"/>
+                            <constraint firstItem="6pd-CC-pm4" firstAttribute="centerX" secondItem="rW8-Rp-MTz" secondAttribute="centerX" id="l0l-tx-XV6"/>
+                            <constraint firstItem="qnh-N2-IyZ" firstAttribute="top" secondItem="KRq-ZU-SVs" secondAttribute="top" constant="29" id="lkt-id-9Sl"/>
+                            <constraint firstItem="jIV-Sk-PJN" firstAttribute="centerX" secondItem="Akm-ZV-uIv" secondAttribute="centerX" id="ngi-wh-AHO"/>
+                            <constraint firstItem="Akm-ZV-uIv" firstAttribute="centerY" secondItem="KRq-ZU-SVs" secondAttribute="centerY" id="rlm-Lw-WNU"/>
+                            <constraint firstItem="6Js-Oi-JUH" firstAttribute="width" secondItem="KRq-ZU-SVs" secondAttribute="width" multiplier="150:320" id="sDS-fa-jRE"/>
+                            <constraint firstItem="Akm-ZV-uIv" firstAttribute="centerX" secondItem="exP-Bz-n6N" secondAttribute="centerX" constant="-4.5" id="tu1-0u-FzQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonAudioMute" destination="6pd-CC-pm4" id="cVN-A7-2dV"/>
+                        <outlet property="buttonHD" destination="jQ1-Hd-ua9" id="c67-6T-U1S"/>
+                        <outlet property="buttonMD" destination="uLv-38-ZTL" id="5Ae-mC-BRa"/>
+                        <outlet property="buttonRecord" destination="rW8-Rp-MTz" id="RPi-Bl-kpD"/>
+                        <outlet property="buttonSD" destination="EAL-3B-vqI" id="vB6-Tg-Ffc"/>
+                        <outlet property="buttonSetting" destination="jIV-Sk-PJN" id="1ON-iP-s1f"/>
+                        <outlet property="buttonSwitchCamera" destination="yli-ZP-8PR" id="O6B-XF-VLL"/>
+                        <outlet property="timeLabel" destination="qnh-N2-IyZ" id="BTE-x8-zHn"/>
+                        <outlet property="zoomValueSlider" destination="6Js-Oi-JUH" id="MNd-hb-BcE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ha9-Hm-Rfk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11.244377811094454" y="157.59999999999999"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="flashLightOff.png" width="49" height="34"/>
+        <image name="flashLightOn.png" width="49" height="34"/>
+        <image name="icon_control_n.png" width="90" height="90"/>
+        <image name="icon_control_s.png" width="90" height="90"/>
+        <image name="mic_off.png" width="48" height="72"/>
+        <image name="mic_on.png" width="48" height="72"/>
+        <image name="switchCamera.png" width="99" height="68"/>
+    </resources>
+</document>

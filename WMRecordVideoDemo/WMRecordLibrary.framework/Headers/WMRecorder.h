@@ -5,12 +5,10 @@
 //  Created by WangMing on 2016/10/12.
 //  Copyright © 2016年 WangMing. All rights reserved.
 //
-
-#import <AVFoundation/AVCaptureVideoPreviewLayer.h>
-#import <Foundation/Foundation.h>
+#import "WMRecordConfiguration.h"
 #import <UIKit/UIKit.h>
-@class WMRecordConfiguration;
-
+#import <Foundation/Foundation.h>
+#import <AVFoundation/AVCaptureVideoPreviewLayer.h>
 @class WMRecorder;
 @protocol WMVideoRecordDelegate <NSObject>
 
@@ -25,7 +23,6 @@
 @property(atomic, assign, readonly) BOOL isCapturing;//正在录制
 @property(atomic, assign, readonly) BOOL isPaused;//是否暂停
 @property(nonatomic, weak) id <WMVideoRecordDelegate> delegate;
-@property(nonatomic, strong) AVCaptureDevice *captureDevice;
 -(instancetype)initWithRecordConfiguration:(WMRecordConfiguration *)configuration;
 
 #pragma mark 捕获到的视频呈现的layer
@@ -49,7 +46,10 @@
 #pragma mark 切换前后置摄像头
 - (void)switchCamera;
 #pragma mark 设置静音
+#pragma mark adjustCameraZoomValue
+- (void)adjustCameraZoomValue:(CGFloat)zoomValue;
 - (void)setMute:(BOOL)bEnable;
-
-
+#pragma mark 切换录制分辨率
+- (void)setVideoRecordLevel:(videoRecordType)videoRecordType withAudioBitRate:(NSUInteger)audioBitRate
+           withVideoBitRate:(NSUInteger)videoBitRate withVideoFps:(NSUInteger)fps;
 @end
