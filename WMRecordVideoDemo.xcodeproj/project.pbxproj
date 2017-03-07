@@ -10,14 +10,13 @@
 		EE5D87531E6CFF66006956BF /* LandSpaceRecordVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5D87521E6CFF66006956BF /* LandSpaceRecordVideo.m */; };
 		EE5D87561E6D0296006956BF /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5D87551E6D0296006956BF /* RootViewController.m */; };
 		EEC645EB1E69050D0085CD6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC645EA1E69050D0085CD6E /* AppDelegate.m */; };
-		EEC645EE1E69050D0085CD6E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC645ED1E69050D0085CD6E /* ViewController.m */; };
+		EEC645EE1E69050D0085CD6E /* PortraitSpaceRecordVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC645ED1E69050D0085CD6E /* PortraitSpaceRecordVideo.m */; };
 		EEC645F11E69050D0085CD6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEC645EF1E69050D0085CD6E /* Main.storyboard */; };
 		EEC645F31E69050D0085CD6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEC645F21E69050D0085CD6E /* Assets.xcassets */; };
 		EEC645F61E69050D0085CD6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEC645F41E69050D0085CD6E /* LaunchScreen.storyboard */; };
 		EEC646011E69050D0085CD6E /* WMRecordVideoDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC646001E69050D0085CD6E /* WMRecordVideoDemoTests.m */; };
 		EEC6460C1E69050E0085CD6E /* WMRecordVideoDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC6460B1E69050E0085CD6E /* WMRecordVideoDemoUITests.m */; };
 		EEE6F4F31E6E5C1E0048ED95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE6F4F21E6E5C1E0048ED95 /* main.m */; };
-		EEE6F4F51E6E5C3F0048ED95 /* WMRecordLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE6F4F41E6E5C3F0048ED95 /* WMRecordLibrary.framework */; };
 		EEE6F4F71E6E5C9A0048ED95 /* LandSpace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEE6F4F61E6E5C9A0048ED95 /* LandSpace.storyboard */; };
 		EEE6F4F91E6E5D010048ED95 /* PortraitSpace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEE6F4F81E6E5D010048ED95 /* PortraitSpace.storyboard */; };
 		EEE6F4FB1E6E5E4A0048ED95 /* back12@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EEE6F4FA1E6E5E4A0048ED95 /* back12@2x.png */; };
@@ -32,6 +31,7 @@
 		EEE6F50D1E6E5F900048ED95 /* flashLightOn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EEE6F50B1E6E5F900048ED95 /* flashLightOn@3x.png */; };
 		EEE6F5101E6E5F9B0048ED95 /* switchCamera.png in Resources */ = {isa = PBXBuildFile; fileRef = EEE6F50E1E6E5F9B0048ED95 /* switchCamera.png */; };
 		EEE6F5111E6E5F9B0048ED95 /* switchCamera@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EEE6F50F1E6E5F9B0048ED95 /* switchCamera@3x.png */; };
+		EEF545C11E6EB5F800C24DD3 /* WMRecordLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEF545C01E6EB5F800C24DD3 /* WMRecordLibrary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +59,8 @@
 		EEC645E31E69050D0085CD6E /* WMRecordVideoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WMRecordVideoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEC645E91E69050D0085CD6E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EEC645EA1E69050D0085CD6E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EEC645EC1E69050D0085CD6E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EEC645ED1E69050D0085CD6E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EEC645EC1E69050D0085CD6E /* PortraitSpaceRecordVideo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PortraitSpaceRecordVideo.h; sourceTree = "<group>"; };
+		EEC645ED1E69050D0085CD6E /* PortraitSpaceRecordVideo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PortraitSpaceRecordVideo.m; sourceTree = "<group>"; };
 		EEC645F01E69050D0085CD6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EEC645F21E69050D0085CD6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEC645F51E69050D0085CD6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -72,7 +72,6 @@
 		EEC6460B1E69050E0085CD6E /* WMRecordVideoDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMRecordVideoDemoUITests.m; sourceTree = "<group>"; };
 		EEC6460D1E69050E0085CD6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEE6F4F21E6E5C1E0048ED95 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EEE6F4F41E6E5C3F0048ED95 /* WMRecordLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WMRecordLibrary.framework; sourceTree = "<group>"; };
 		EEE6F4F61E6E5C9A0048ED95 /* LandSpace.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LandSpace.storyboard; sourceTree = "<group>"; };
 		EEE6F4F81E6E5D010048ED95 /* PortraitSpace.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PortraitSpace.storyboard; sourceTree = "<group>"; };
 		EEE6F4FA1E6E5E4A0048ED95 /* back12@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back12@2x.png"; sourceTree = "<group>"; };
@@ -87,6 +86,7 @@
 		EEE6F50B1E6E5F900048ED95 /* flashLightOn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flashLightOn@3x.png"; sourceTree = "<group>"; };
 		EEE6F50E1E6E5F9B0048ED95 /* switchCamera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchCamera.png; sourceTree = "<group>"; };
 		EEE6F50F1E6E5F9B0048ED95 /* switchCamera@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switchCamera@3x.png"; sourceTree = "<group>"; };
+		EEF545C01E6EB5F800C24DD3 /* WMRecordLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WMRecordLibrary.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEE6F4F51E6E5C3F0048ED95 /* WMRecordLibrary.framework in Frameworks */,
+				EEF545C11E6EB5F800C24DD3 /* WMRecordLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,34 +138,10 @@
 		EEC645E51E69050D0085CD6E /* WMRecordVideoDemo */ = {
 			isa = PBXGroup;
 			children = (
-				EEC645E91E69050D0085CD6E /* AppDelegate.h */,
-				EEC645EA1E69050D0085CD6E /* AppDelegate.m */,
-				EEC645EC1E69050D0085CD6E /* ViewController.h */,
-				EEC645ED1E69050D0085CD6E /* ViewController.m */,
-				EE5D87511E6CFF66006956BF /* LandSpaceRecordVideo.h */,
-				EE5D87521E6CFF66006956BF /* LandSpaceRecordVideo.m */,
-				EEC645EF1E69050D0085CD6E /* Main.storyboard */,
-				EEE6F4F61E6E5C9A0048ED95 /* LandSpace.storyboard */,
-				EEE6F4F81E6E5D010048ED95 /* PortraitSpace.storyboard */,
-				EE5D87541E6D0296006956BF /* RootViewController.h */,
-				EE5D87551E6D0296006956BF /* RootViewController.m */,
-				EEC645F21E69050D0085CD6E /* Assets.xcassets */,
-				EEC645F41E69050D0085CD6E /* LaunchScreen.storyboard */,
-				EEC645F71E69050D0085CD6E /* Info.plist */,
-				EEE6F4F21E6E5C1E0048ED95 /* main.m */,
-				EEE6F4FC1E6E5EA50048ED95 /* mic_off.png */,
-				EEE6F4FA1E6E5E4A0048ED95 /* back12@2x.png */,
-				EEE6F4FE1E6E5EAA0048ED95 /* mic_on.png */,
-				EEE6F5001E6E5EBC0048ED95 /* icon_control_s.png */,
-				EEE6F5021E6E5EC20048ED95 /* icon_control_n.png */,
-				EEE6F5041E6E5F600048ED95 /* picker_slider_thumb@3x.png */,
-				EEE6F5061E6E5F860048ED95 /* flashLightOff@2x.png */,
-				EEE6F5071E6E5F860048ED95 /* flashLightOff@3x.png */,
-				EEE6F50A1E6E5F900048ED95 /* flashLightOn@2x.png */,
-				EEE6F50B1E6E5F900048ED95 /* flashLightOn@3x.png */,
-				EEE6F50E1E6E5F9B0048ED95 /* switchCamera.png */,
-				EEE6F50F1E6E5F9B0048ED95 /* switchCamera@3x.png */,
-				EEE6F4F41E6E5C3F0048ED95 /* WMRecordLibrary.framework */,
+				EEF545AC1E6EA42E00C24DD3 /* other */,
+				EEF545AB1E6EA42900C24DD3 /* view */,
+				EEF545AA1E6EA41D00C24DD3 /* viewController */,
+				EEF545A91E6EA3FA00C24DD3 /* videoRecordLiabrary */,
 			);
 			path = WMRecordVideoDemo;
 			sourceTree = "<group>";
@@ -186,6 +162,62 @@
 				EEC6460D1E69050E0085CD6E /* Info.plist */,
 			);
 			path = WMRecordVideoDemoUITests;
+			sourceTree = "<group>";
+		};
+		EEF545A91E6EA3FA00C24DD3 /* videoRecordLiabrary */ = {
+			isa = PBXGroup;
+			children = (
+				EEF545C01E6EB5F800C24DD3 /* WMRecordLibrary.framework */,
+				EEE6F4FC1E6E5EA50048ED95 /* mic_off.png */,
+				EEE6F4FA1E6E5E4A0048ED95 /* back12@2x.png */,
+				EEE6F4FE1E6E5EAA0048ED95 /* mic_on.png */,
+				EEE6F5001E6E5EBC0048ED95 /* icon_control_s.png */,
+				EEE6F5021E6E5EC20048ED95 /* icon_control_n.png */,
+				EEE6F5041E6E5F600048ED95 /* picker_slider_thumb@3x.png */,
+				EEE6F5061E6E5F860048ED95 /* flashLightOff@2x.png */,
+				EEE6F5071E6E5F860048ED95 /* flashLightOff@3x.png */,
+				EEE6F50A1E6E5F900048ED95 /* flashLightOn@2x.png */,
+				EEE6F50B1E6E5F900048ED95 /* flashLightOn@3x.png */,
+				EEE6F50E1E6E5F9B0048ED95 /* switchCamera.png */,
+				EEE6F50F1E6E5F9B0048ED95 /* switchCamera@3x.png */,
+			);
+			name = videoRecordLiabrary;
+			sourceTree = "<group>";
+		};
+		EEF545AA1E6EA41D00C24DD3 /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				EE5D87541E6D0296006956BF /* RootViewController.h */,
+				EE5D87551E6D0296006956BF /* RootViewController.m */,
+				EE5D87511E6CFF66006956BF /* LandSpaceRecordVideo.h */,
+				EE5D87521E6CFF66006956BF /* LandSpaceRecordVideo.m */,
+				EEC645EC1E69050D0085CD6E /* PortraitSpaceRecordVideo.h */,
+				EEC645ED1E69050D0085CD6E /* PortraitSpaceRecordVideo.m */,
+			);
+			name = viewController;
+			sourceTree = "<group>";
+		};
+		EEF545AB1E6EA42900C24DD3 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				EEC645EF1E69050D0085CD6E /* Main.storyboard */,
+				EEE6F4F61E6E5C9A0048ED95 /* LandSpace.storyboard */,
+				EEE6F4F81E6E5D010048ED95 /* PortraitSpace.storyboard */,
+				EEC645F21E69050D0085CD6E /* Assets.xcassets */,
+				EEC645F41E69050D0085CD6E /* LaunchScreen.storyboard */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		EEF545AC1E6EA42E00C24DD3 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				EEC645E91E69050D0085CD6E /* AppDelegate.h */,
+				EEC645EA1E69050D0085CD6E /* AppDelegate.m */,
+				EEC645F71E69050D0085CD6E /* Info.plist */,
+				EEE6F4F21E6E5C1E0048ED95 /* main.m */,
+			);
+			name = other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,7 +368,7 @@
 				EEE6F4F31E6E5C1E0048ED95 /* main.m in Sources */,
 				EE5D87531E6CFF66006956BF /* LandSpaceRecordVideo.m in Sources */,
 				EE5D87561E6D0296006956BF /* RootViewController.m in Sources */,
-				EEC645EE1E69050D0085CD6E /* ViewController.m in Sources */,
+				EEC645EE1E69050D0085CD6E /* PortraitSpaceRecordVideo.m in Sources */,
 				EEC645EB1E69050D0085CD6E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

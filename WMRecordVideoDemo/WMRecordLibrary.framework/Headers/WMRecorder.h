@@ -22,6 +22,8 @@
 
 @property(atomic, assign, readonly) BOOL isCapturing;//正在录制
 @property(atomic, assign, readonly) BOOL isPaused;//是否暂停
+@property (nonatomic,assign) BOOL isAudioMute;
+@property (nonatomic, assign) BOOL isFrontCamera;
 @property(nonatomic, weak) id <WMVideoRecordDelegate> delegate;
 -(instancetype)initWithRecordConfiguration:(WMRecordConfiguration *)configuration;
 
@@ -45,10 +47,8 @@
 - (void)setFocusCursorWithPoint:(CGPoint)tapPoint;
 #pragma mark 切换前后置摄像头
 - (void)switchCamera;
-#pragma mark 设置静音
 #pragma mark adjustCameraZoomValue
 - (void)adjustCameraZoomValue:(CGFloat)zoomValue;
-- (void)setMute:(BOOL)bEnable;
 #pragma mark 切换录制分辨率
 - (void)setVideoRecordLevel:(videoRecordType)videoRecordType withAudioBitRate:(NSUInteger)audioBitRate
            withVideoBitRate:(NSUInteger)videoBitRate withVideoFps:(NSUInteger)fps;

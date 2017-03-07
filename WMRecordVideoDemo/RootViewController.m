@@ -7,7 +7,7 @@
 //
 
 #import "RootViewController.h"
-#import "ViewController.h"
+#import "PortraitSpaceRecordVideo.h"
 #import "LandSpaceRecordVideo.h"
 @interface RootViewController ()
 
@@ -27,7 +27,7 @@
 }
 - (IBAction)landscapeRecord:(UIButton *)sender {
     LandSpaceRecordVideo *lanSpaceVC = [[UIStoryboard storyboardWithName:@"LandSpace" bundle:[NSBundle mainBundle]]
-                                        instantiateViewControllerWithIdentifier:@"LandSpaceRecordVideo"];;
+                                        instantiateViewControllerWithIdentifier:@"LandSpaceRecordVideo"];
     
     [self.navigationController pushViewController:lanSpaceVC animated:YES];
 }
@@ -35,7 +35,8 @@
 
 - (IBAction)portraitRecord:(UIButton *)sender
 {
-    ViewController *VC = [[ViewController alloc] init];
+    PortraitSpaceRecordVideo *VC = [[UIStoryboard storyboardWithName:@"PortraitSpace" bundle:[NSBundle mainBundle]]
+                                    instantiateViewControllerWithIdentifier:@"PortraitSpaceRecordVideo"];;
     
     [self.navigationController pushViewController:VC animated:YES];
 }

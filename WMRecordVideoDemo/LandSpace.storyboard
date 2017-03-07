@@ -24,34 +24,49 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rW8-Rp-MTz" userLabel="录制">
-                                <rect key="frame" x="603.5" y="166" width="43.5" height="43"/>
+                                <rect key="frame" x="604" y="166" width="43" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="rW8-Rp-MTz" secondAttribute="height" multiplier="1:1" id="7Wn-pf-Olu"/>
                                 </constraints>
                                 <state key="normal" image="icon_control_n.png"/>
                                 <state key="selected" image="icon_control_s.png"/>
+                                <connections>
+                                    <action selector="recordButtonTapped:" destination="1zh-gt-F8d" eventType="touchUpInside" id="obo-jC-h0c"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIV-Sk-PJN">
                                 <rect key="frame" x="20" y="331" width="37" height="34"/>
                                 <state key="normal" title="标清"/>
+                                <connections>
+                                    <action selector="setVideoLevelButtonTapped:" destination="1zh-gt-F8d" eventType="touchUpInside" id="5Aj-ye-MhO"/>
+                                </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NsS-ZH-gk6">
-                                <rect key="frame" x="77" y="375" width="68" height="91"/>
+                            <view hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NsS-ZH-gk6" userLabel="paraSetting">
+                                <rect key="frame" x="77" y="284" width="68" height="91"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jQ1-Hd-ua9">
-                                        <rect key="frame" x="0.0" y="30.5" width="68" height="30.5"/>
+                                        <rect key="frame" x="0.0" y="30.5" width="68" height="30"/>
                                         <state key="normal" title="高清"/>
+                                        <connections>
+                                            <action selector="buttonHDTapped:" destination="1zh-gt-F8d" eventType="touchUpInside" id="7Jx-ld-dRp"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uLv-38-ZTL">
-                                        <rect key="frame" x="0.0" y="61" width="68" height="30"/>
+                                        <rect key="frame" x="0.0" y="60.5" width="68" height="30.5"/>
                                         <state key="normal" title="超清"/>
+                                        <connections>
+                                            <action selector="buttonMDTapped:" destination="1zh-gt-F8d" eventType="touchUpInside" id="RVk-9q-pRA"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAL-3B-vqI">
                                         <rect key="frame" x="0.0" y="0.0" width="68" height="30.5"/>
                                         <state key="normal" title="标清"/>
+                                        <connections>
+                                            <action selector="buttonSDTapped:" destination="1zh-gt-F8d" eventType="touchUpInside" id="mLd-np-bJE"/>
+                                        </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.079480627440000007" green="1" blue="0.1726366758" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="uLv-38-ZTL" firstAttribute="leading" secondItem="NsS-ZH-gk6" secondAttribute="leading" id="0TK-iE-e4h"/>
                                     <constraint firstItem="EAL-3B-vqI" firstAttribute="top" secondItem="NsS-ZH-gk6" secondAttribute="top" id="FOm-A8-oyM"/>
@@ -71,34 +86,49 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exP-Bz-n6N">
-                                <rect key="frame" x="24.5" y="18" width="37" height="34"/>
+                                <rect key="frame" x="25" y="18" width="37" height="34"/>
                                 <state key="normal" title="返回"/>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="1zh-gt-F8d" eventType="touchUpInside" id="ChT-mZ-9Pt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Akm-ZV-uIv">
                                 <rect key="frame" x="14" y="170" width="49" height="34"/>
                                 <state key="normal" image="flashLightOff.png"/>
                                 <state key="selected" image="flashLightOn.png"/>
+                                <connections>
+                                    <action selector="switchFlashLightButtonTapped:" destination="1zh-gt-F8d" eventType="touchUpInside" id="cxp-OY-SiP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yli-ZP-8PR">
-                                <rect key="frame" x="320" y="18" width="43.5" height="43"/>
+                                <rect key="frame" x="320.5" y="18" width="43" height="43"/>
                                 <state key="normal" image="switchCamera.png"/>
+                                <connections>
+                                    <action selector="switchCamera:" destination="1zh-gt-F8d" eventType="touchUpInside" id="sEt-EX-xwt"/>
+                                </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnh-N2-IyZ">
-                                <rect key="frame" x="587" y="29" width="71.5" height="21"/>
+                                <rect key="frame" x="587" y="29" width="72" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="6Js-Oi-JUH">
-                                <rect key="frame" x="183.5" y="333" width="317" height="31"/>
+                                <rect key="frame" x="184" y="333" width="317" height="31"/>
+                                <connections>
+                                    <action selector="setZoomValue:" destination="1zh-gt-F8d" eventType="valueChanged" id="hyE-ZB-c6A"/>
+                                </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pd-CC-pm4">
-                                <rect key="frame" x="611.5" y="326.5" width="27.5" height="43"/>
+                                <rect key="frame" x="612" y="327" width="27" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="6pd-CC-pm4" secondAttribute="height" multiplier="2.5:4" id="UYr-oV-smV"/>
                                 </constraints>
                                 <state key="normal" image="mic_on.png"/>
                                 <state key="selected" image="mic_off.png"/>
+                                <connections>
+                                    <action selector="SettingAudioMute:" destination="1zh-gt-F8d" eventType="touchUpInside" id="Nci-YM-2eJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -118,7 +148,7 @@
                             <constraint firstAttribute="trailing" secondItem="rW8-Rp-MTz" secondAttribute="trailing" constant="20" id="Ruu-Al-osf"/>
                             <constraint firstItem="6pd-CC-pm4" firstAttribute="width" secondItem="rW8-Rp-MTz" secondAttribute="width" multiplier="2:5" constant="10" id="U8c-9c-NjL"/>
                             <constraint firstItem="yli-ZP-8PR" firstAttribute="width" secondItem="rW8-Rp-MTz" secondAttribute="width" id="Vw3-Us-WfX"/>
-                            <constraint firstItem="NsS-ZH-gk6" firstAttribute="top" secondItem="KRq-ZU-SVs" secondAttribute="bottom" id="Xp9-A0-She"/>
+                            <constraint firstItem="NsS-ZH-gk6" firstAttribute="bottom" secondItem="KRq-ZU-SVs" secondAttribute="bottom" id="Xp9-A0-She"/>
                             <constraint firstItem="NsS-ZH-gk6" firstAttribute="height" secondItem="KRq-ZU-SVs" secondAttribute="height" multiplier="80:330" id="fuO-ho-ZMc"/>
                             <constraint firstItem="rW8-Rp-MTz" firstAttribute="centerX" secondItem="qnh-N2-IyZ" secondAttribute="centerX" constant="2.75" id="j0p-CZ-sR6"/>
                             <constraint firstItem="6pd-CC-pm4" firstAttribute="centerX" secondItem="rW8-Rp-MTz" secondAttribute="centerX" id="l0l-tx-XV6"/>
@@ -138,6 +168,7 @@
                         <outlet property="buttonSetting" destination="jIV-Sk-PJN" id="1ON-iP-s1f"/>
                         <outlet property="buttonSwitchCamera" destination="yli-ZP-8PR" id="O6B-XF-VLL"/>
                         <outlet property="timeLabel" destination="qnh-N2-IyZ" id="BTE-x8-zHn"/>
+                        <outlet property="viewSetting" destination="NsS-ZH-gk6" id="vxa-vy-3zb"/>
                         <outlet property="zoomValueSlider" destination="6Js-Oi-JUH" id="MNd-hb-BcE"/>
                     </connections>
                 </viewController>
