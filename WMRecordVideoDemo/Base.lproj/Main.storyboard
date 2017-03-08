@@ -55,13 +55,22 @@
                                     <action selector="portraitRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GRE-Nx-oIz"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shenzhen Heaton Technology Co., Ltd." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3vL-Hy-fv6">
+                                <rect key="frame" x="0.0" y="626" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="3vL-Hy-fv6" secondAttribute="bottom" constant="20" id="7Qc-nh-Hay"/>
+                            <constraint firstAttribute="trailing" secondItem="3vL-Hy-fv6" secondAttribute="trailing" id="Cuy-0p-tuS"/>
                             <constraint firstItem="DCC-DC-0yh" firstAttribute="top" secondItem="9MN-2i-1Ra" secondAttribute="top" constant="200" id="JiL-gW-fan"/>
                             <constraint firstItem="9MN-2i-1Ra" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="200" id="LHX-2Y-uxc"/>
                             <constraint firstItem="DCC-DC-0yh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NHT-jZ-vfG"/>
                             <constraint firstItem="9MN-2i-1Ra" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Nl3-uL-c4Y"/>
+                            <constraint firstItem="3vL-Hy-fv6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VpK-UY-S2y"/>
                             <constraint firstAttribute="trailing" secondItem="9MN-2i-1Ra" secondAttribute="trailing" id="anq-Q4-xro"/>
                             <constraint firstAttribute="trailing" secondItem="DCC-DC-0yh" secondAttribute="trailing" id="sq7-8b-c9W"/>
                         </constraints>

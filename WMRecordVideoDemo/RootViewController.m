@@ -19,6 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     NSLog(@"加载");
+    self.title = @"横竖屏视频录制Demo";
 }
 
 - (void)didReceiveMemoryWarning {

@@ -287,7 +287,7 @@
 				TargetAttributes = {
 					EEC645E21E69050D0085CD6E = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = QHBJ5Y33BP;
+						DevelopmentTeam = TKVWCL3VFY;
 					};
 					EEC645FB1E69050D0085CD6E = {
 						CreatedOnToolsVersion = 7.2;
@@ -508,7 +508,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = QHBJ5Y33BP;
+				DEVELOPMENT_TEAM = TKVWCL3VFY;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WMRecordVideoDemo",
@@ -529,7 +529,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = QHBJ5Y33BP;
+				DEVELOPMENT_TEAM = TKVWCL3VFY;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WMRecordVideoDemo",
